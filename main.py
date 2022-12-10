@@ -2,7 +2,7 @@ evento_1 = {'nome':'', 'artista':'', 'data':'', 'hora':'', 'local':''}
 evento_2 = {'nome':'', 'artista':'', 'data':'', 'hora':'', 'local':''}
 evento_3 = {'nome':'', 'artista':'', 'data':'', 'hora':'', 'local':''}
 
-bancadas = ['A','B','C','D']
+bancadas = {'A':0,'B':0,'C':0,'D':0}
 bilhetes_1 = ['A1','A2','A3','A4','A5','B1','B2','B3','B4','B5','C1','C2','C3','C4','C5','D1','D2','D3','D4','D5',]
 bilhetes_2 = ['A1','A2','A3','A4','A5','B1','B2','B3','B4','B5','C1','C2','C3','C4','C5','D1','D2','D3','D4','D5',]
 bilhetes_3 = ['A1','A2','A3','A4','A5','B1','B2','B3','B4','B5','C1','C2','C3','C4','C5','D1','D2','D3','D4','D5',]
@@ -51,7 +51,6 @@ while True:
                 |              2-Comprar bilhetes           |            
                 |                  3-sair                   |
                 |                 4-voltar                  | 
-                |                                           |
                 |                                           |
                 |___________________________________________|                                         
 
