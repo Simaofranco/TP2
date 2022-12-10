@@ -68,4 +68,3 @@ while True:
                 print('\nInsira uma opção valida!')
     else:
         print('Insira um utilizador valido(g/c)')
-        
