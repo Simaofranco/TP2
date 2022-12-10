@@ -37,8 +37,6 @@ while True:
                 exit()
             elif(opcao == 5):
                 break
-            elif(opcao == 5):
-                break
             else:
                 print('\nInsira uma opção valida!')
 
@@ -50,8 +48,9 @@ while True:
                 *********************************************
                 |                                           |
                 |                1-Ver eventos              |
-                |               2-Comprar bilhetes          |            
-                |                                           | 
+                |              2-Comprar bilhetes           |            
+                |                  3-sair                   |
+                |                 4-voltar                  | 
                 |                                           |
                 |                                           |
                 |___________________________________________|                                         
@@ -62,8 +61,12 @@ while True:
                 pass
             elif(opcao == 2):
                 pass
+            elif(opcao == 3):
+                exit()
+            elif(opcao == 4):
+                break
             else:
-                print('\nInsira uma opção valida:')
+                print('\nInsira uma opção valida!')
     else:
         print('Insira um utilizador valido(g/c)')
         
