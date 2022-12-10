@@ -8,4 +8,18 @@ def criar_evento(dic):
     dic['hora'] = input("Insira a hora do evento:")
     dic['local'] = input("Insira o nome do local do evento:")
     return dic
-    
+
+def ver_bilhetes(bilhetes):
+    '''
+    função para ver bilhetes
+    '''
+    for i in bilhetes:
+        print(i" ")
+        if i == 'A5':
+            print('\n')
+        elif i == 'B5':
+            print('\n')
+        elif i == 'C5':
+            print('\n')
+        elif i == 'D5':
+            print('\n')
