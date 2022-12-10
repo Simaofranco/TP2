@@ -26,9 +26,20 @@ def ver_bilhetes(bilhetes):
 
 def preço_bancadas(bancadas):
     '''
-    Função preço bancadas
+    Função para atribuit«r um preço a cada bancada
     '''
     for keys in bancadas.keys():
         bancadas[keys] = input("Insira o preço da bancada" + bancadas[keys] + ":")
     return bancadas
+
+def eliminar_eventos(dic):
+    """
+    Elimina os items de um evento
+    """
+    del dic['name']
+    del dic['artista']
+    del dic['data']
+    del dic['hora']
+    del dic['local']
+    return dic
     

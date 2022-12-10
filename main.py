@@ -1,10 +1,8 @@
 import funcoes_gerente as fg
 
-
 evento_1 = {'nome':'', 'artista':'', 'data':'', 'hora':'', 'local':''}
 evento_2 = {'nome':'', 'artista':'', 'data':'', 'hora':'', 'local':''}
 evento_3 = {'nome':'', 'artista':'', 'data':'', 'hora':'', 'local':''}
-tentativa = 1
 
 bancadas_1 = {'A':0,'B':0,'C':0,'D':0}
 bancadas_2 = {'A':0,'B':0,'C':0,'D':0}
@@ -35,14 +33,17 @@ while True:
             """)
             opcao = int(input('\nInsira uma opção:'))
             if(opcao == 1):
-                pass
+                evento = int(input('\nInsira o evento que pretende usar:'))
+                
             elif(opcao == 2):
                 pass
             elif(opcao == 3):
                 pass
             elif(opcao == 4):
-                exit()
+                pass
             elif(opcao == 5):
+                exit()
+            elif(opcao == 6):
                 break
             else:
                 print('\nInsira uma opção valida!')
