@@ -29,7 +29,7 @@ def preço_bancadas(bancadas):
     Função para atribuit«r um preço a cada bancada
     '''
     for keys in bancadas.keys():
-        bancadas[keys] = input("Insira o preço da bancada " + keys + ":")
+        bancadas[keys] = int(input("Insira o preço da bancada " + keys + ":"))
     return bancadas
 
 def eliminar_eventos(dic):
@@ -78,7 +78,7 @@ def editar_bancadas(bancadas):
     Função para editar os preços de cada bancada
     '''
     for keys in bancadas.keys():
-        bancadas[keys] = input("Insira um novo preço da bancada " + keys + ":")
+        bancadas[keys] = int(input("Insira um novo preço da bancada " + keys + ":"))
     return bancadas
 
 
