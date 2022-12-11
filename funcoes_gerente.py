@@ -6,7 +6,8 @@ def criar_evento(dic):
     dic['artista'] = input("Insira o nome do artista:")
     dic['data'] = input("Insira a data do evento:")
     dic['hora'] = input("Insira a hora do evento:")
-    dic['local'] = input("Insira o nome do local do evento:")    
+    dic['local'] = input("Insira o nome do local do evento:")  
+    print('\nEvento criado com sucesso!')  
     return dic
 
 def ver_bilhetes(bilhetes):

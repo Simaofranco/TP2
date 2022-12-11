@@ -1,4 +1,5 @@
-import TP2.funcoes_gerente as fg
+import funcoes_gerente as fg
+import funcoes_cliente as fc
 
 evento_1 = {'nome':'', 'artista':'', 'data':'', 'hora':'', 'local':''}
 evento_2 = {'nome':'', 'artista':'', 'data':'', 'hora':'', 'local':''}
@@ -26,14 +27,27 @@ while True:
                 |              2-Editar evento              |
                 |              3-Eliminar evento            |
                 |              4- Ver bilhetes              |
-                |                 5-sair                    |
-                |                 6-voltar                  |                                                    
+                |              5- Ver eventos               |
+                |                 6-sair                    |
+                |                 7-voltar                  |                                                    
                 |                                           |
                 #############################################
             """)
             opcao = int(input('\nInsira uma opção:'))
             if(opcao == 1):
-                evento = int(input('\nInsira o evento que pretende usar:'))   
+                while True:
+                    evento = int(input('\nInsira o evento que pretende criar(1/2/3):'))
+                    if evento == 1:
+                        evento_1 = fg.criar_evento(evento_1)
+                        break
+                    elif evento == 2:
+                        evento_2 = fg.criar_evento(evento_2)
+                        break
+                    elif evento == 3:
+                        evento_3 = fg.criar_evento(evento_3)
+                        break
+                    else:
+                        print('Esse evento não existe!')
             elif(opcao == 2):
                 pass
             elif(opcao == 3):
@@ -41,8 +55,10 @@ while True:
             elif(opcao == 4):
                 pass
             elif(opcao == 5):
-                exit()
+                pass
             elif(opcao == 6):
+                exit()
+            elif(opcao == 7):
                 break
             else:
                 print('\nInsira uma opção valida!')
