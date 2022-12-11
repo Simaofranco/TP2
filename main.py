@@ -35,8 +35,9 @@ while True:
             """)
             opcao = int(input('\nInsira uma opção:'))
             if(opcao == 1):
+                #Criar eventos
                 while True:
-                    evento = int(input('\nInsira o evento que pretende criar(1/2/3):'))
+                    evento = int(input('\nQual o evento que pretende criar(1/2/3):'))
                     if evento == 1:
                         evento_1 = fg.criar_evento(evento_1)
                         bancadas_1 = fg.preço_bancadas(bancadas_1)
@@ -55,12 +56,31 @@ while True:
                     else:
                         print('Esse evento não existe!')
             elif(opcao == 2):
-                pass
+                while True:
+                    evento = int(input('\nQual é o evento que pretende editar(1/2/3):'))
+                    if evento == 1:
+                        evento_1 = fg.editar_evento(evento_1)
+                        bancadas_1 = fg.editar_evento(evento_1)
+                        print('\nEvento editado com sucesso!')
+                        break
+                    elif evento == 2:
+                        evento_2 = fg.editar_evento(evento_2)
+                        bancadas_2 = fg.editar_evento(evento_2)
+                        print('\nEvento editado com sucesso!')
+                        break
+                    elif evento == 3:
+                        evento_2 = fg.editar_evento(evento_2)
+                        bancadas_2 = fg.editar_evento(evento_2)
+                        print('\nEvento editado com sucesso!')
+                        break
+                    else:
+                        print('Esse evento não existe!')
             elif(opcao == 3):
                 pass
             elif(opcao == 4):
                 pass
             elif(opcao == 5):
+                #Ver eventos
                 fc.ver_eventos(evento_1, evento_2, evento_3)              
             elif(opcao == 6):
                 exit()

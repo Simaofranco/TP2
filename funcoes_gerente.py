@@ -6,7 +6,7 @@ def criar_evento(dic):
     dic['artista'] = input("Insira o nome do artista:")
     dic['data'] = input("Insira a data do evento:")
     dic['hora'] = input("Insira a hora do evento:")
-    dic['local'] = input("Insira o nome do local do evento:")  12
+    dic['local'] = input("Insira o nome do local do evento:")  
     return dic
 
 def ver_bilhetes(bilhetes):
@@ -65,7 +65,7 @@ def editar_evento(dic):
     """
     Edita um evento, atribui novos items ao dic do evento
     """
-    dic['name'] = input("Insira um novo nome do evento:")
+    dic['nome'] = input("Insira um novo nome do evento:")
     dic['artista'] = input("Insira um novo nome do artista:")
     dic['data'] = input("Insira uma nova data do evento:")
     dic['hora'] = input("Insira uma nova hora do evento:")
@@ -78,7 +78,7 @@ def editar_bancadas(bancadas):
     Função para editar os preços de cada bancada
     '''
     for keys in bancadas.keys():
-        bancadas[keys] = input("Insira um novo preço da bancada" + bancadas[keys] + ":")
+        bancadas[keys] = input("Insira um novo preço da bancada " + keys + ":")
     return bancadas
 
 
