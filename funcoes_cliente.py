@@ -32,7 +32,7 @@ def comprar_bilhetes(bancadas, list):
         else:
             print('O bilhete já esta vendido ou não existe!\n')
     
-    for i in range(len(list))
+    for i in range(len(list)):
         if list[i] == bilhete:
             list[i] = str(list[i]+'- vendido')
 
