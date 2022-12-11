@@ -6,8 +6,7 @@ def criar_evento(dic):
     dic['artista'] = input("Insira o nome do artista:")
     dic['data'] = input("Insira a data do evento:")
     dic['hora'] = input("Insira a hora do evento:")
-    dic['local'] = input("Insira o nome do local do evento:")  
-    print('\nEvento criado com sucesso!')  
+    dic['local'] = input("Insira o nome do local do evento:")  12
     return dic
 
 def ver_bilhetes(bilhetes):
@@ -30,7 +29,7 @@ def preço_bancadas(bancadas):
     Função para atribuit«r um preço a cada bancada
     '''
     for keys in bancadas.keys():
-        bancadas[keys] = input("Insira o preço da bancada" + bancadas[keys] + ":")
+        bancadas[keys] = input("Insira o preço da bancada " + keys + ":")
     return bancadas
 
 def eliminar_eventos(dic):

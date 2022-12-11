@@ -39,12 +39,18 @@ while True:
                     evento = int(input('\nInsira o evento que pretende criar(1/2/3):'))
                     if evento == 1:
                         evento_1 = fg.criar_evento(evento_1)
+                        bancadas_1 = fg.preço_bancadas(bancadas_1)
+                        print('\nEvento criado com sucesso!')  
                         break
                     elif evento == 2:
                         evento_2 = fg.criar_evento(evento_2)
+                        bancadas_2 = fg.preço_bancadas(bancadas_2)
+                        print('\nEvento criado com sucesso!')  
                         break
                     elif evento == 3:
                         evento_3 = fg.criar_evento(evento_3)
+                        bancadas_3 = fg.preço_bancadas(bancadas_3)
+                        print('\nEvento criado com sucesso!')  
                         break
                     else:
                         print('Esse evento não existe!')
