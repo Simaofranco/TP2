@@ -45,7 +45,7 @@ def eliminar_eventos(dic):
 
 def eliminar_bancadas(dic):
     """
-    Elimina os preços das bancadas evento 
+    Elimina os preços das bancadas do evento 
     """
     del dic['A']
     del dic['B']
