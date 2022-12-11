@@ -42,4 +42,16 @@ def eliminar_eventos(dic):
     del dic['hora']
     del dic['local']
     return dic
+
+def eliminar_bancadas(dic):
+    """
+    Elimina os preços das bancadas evento 
+    """
+    del dic['A']
+    del dic['B']
+    del dic['C']
+    del dic['D']
+    return dic
+    
+
     

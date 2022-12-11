@@ -33,8 +33,7 @@ while True:
             """)
             opcao = int(input('\nInsira uma opção:'))
             if(opcao == 1):
-                evento = int(input('\nInsira o evento que pretende usar:'))
-                
+                evento = int(input('\nInsira o evento que pretende usar:'))   
             elif(opcao == 2):
                 pass
             elif(opcao == 3):
