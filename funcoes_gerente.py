@@ -79,7 +79,7 @@ def editar_bancadas(bancadas):
     Função para editar os preços de cada bancada
     '''
     for keys in bancadas.keys():
-        bancadas[keys] = input("Insira um novo preço da bancada" + bancadas[keys] + ":")
+        bancadas[keys] = input("Insira um novo preço da bancada " + keys + ":")
     return bancadas
 
 
