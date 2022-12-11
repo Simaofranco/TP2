@@ -55,7 +55,7 @@ while True:
             elif(opcao == 4):
                 pass
             elif(opcao == 5):
-                pass
+                fc.ver_eventos(evento_1, evento_2, evento_3)              
             elif(opcao == 6):
                 exit()
             elif(opcao == 7):
