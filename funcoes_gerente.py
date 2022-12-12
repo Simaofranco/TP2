@@ -13,15 +13,15 @@ def ver_bilhetes(bilhetes):
     '''
     função para ver bilhetes
     '''
-    for i in bilhetes:
-        print(i+" ")
-        if i == 'A5':
+    for i in range(len(bilhetes)):
+        print(bilhetes[i]+" ")
+        if i == '4':
             print('\n')
-        elif i == 'B5':
+        elif i == '9':
             print('\n')
-        elif i == 'C5':
+        elif i == '14':
             print('\n')
-        elif i == 'D5':
+        elif i == '19':
             print('\n')
 
 def preço_bancadas(bancadas):
