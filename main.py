@@ -147,8 +147,10 @@ while True:
                         fc.comprar_bilhetes(bancadas_1, bilhetes_1)
                         break
                     elif evento == 2:
+                        fc.comprar_bilhetes(bancadas_2, bilhetes_2)
                         pass
                     elif evento == 3:
+                        fc.comprar_bilhetes(bancadas_3, bilhetes_3)
                         pass
                     else: 
                         print('Esse evento não existe!')
