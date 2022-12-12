@@ -13,16 +13,9 @@ def ver_bilhetes(bilhetes):
     '''
     função para ver bilhetes
     '''
-    for i in range(len(bilhetes)):
-        print(bilhetes[i]+" ")
-        if i == '4':
-            print('\n')
-        elif i == '9':
-            print('\n')
-        elif i == '14':
-            print('\n')
-        elif i == '19':
-            print('\n')
+    for i in bilhetes:
+        print(i)
+
 
 def preço_bancadas(bancadas):
     '''

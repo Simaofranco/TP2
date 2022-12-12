@@ -99,7 +99,19 @@ while True:
                     else:
                         print('Esse evento não existe!')
             elif(opcao == 4):
-                pass
+                while True:
+                    evento = int(input('\nQual é o evento que pretende ver os bilhetes(1/2/3):'))
+                    if evento == 1:
+                        fg.ver_bilhetes(bilhetes_1)
+                        break
+                    elif evento == 2:
+                        fg.ver_bilhetes(bilhetes_2)
+                        break
+                    elif evento == 3:
+                        fg.ver_bilhetes(bilhetes_3)
+                        break
+                    else:
+                        print('Esse evento não existe!')
             elif(opcao == 5):
                 #Ver eventos
                 fc.ver_eventos(evento_1, evento_2, evento_3)              
