@@ -36,7 +36,7 @@ def eliminar_eventos(dic):
     """
     Elimina os items de um evento
     """
-    del dic['name']
+    del dic['nome']
     del dic['artista']
     del dic['data']
     del dic['hora']

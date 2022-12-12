@@ -76,7 +76,28 @@ while True:
                     else:
                         print('Esse evento não existe!')
             elif(opcao == 3):
-                pass
+                while True:
+                    evento = int(input('\nQual é o evento que pretende eliminar(1/2/3):'))
+                    if evento == 1:
+                        evento_1 = fg.eliminar_eventos(evento_1)
+                        bancadas_1 = fg.eliminar_bancadas(bancadas_1)
+                        bilhetes_1 = fg.resetar_bilhetes(bilhetes_1)
+                        print('\nEvento eliminado com sucesso!')
+                        break
+                    elif evento == 2:
+                        evento_2 = fg.eliminar_eventos(evento_2)
+                        bancadas_2 = fg.eliminar_bancadas(bancadas_2)
+                        bilhetes_2 = fg.resetar_bilhetes(bilhetes_2)
+                        print('\nEvento eliminado com sucesso!')
+                        break
+                    elif evento == 3:
+                        evento_3 = fg.eliminar_eventos(evento_3)
+                        bancadas_3 = fg.eliminar_bancadas(bancadas_3)
+                        bilhetes_3 = fg.resetar_bilhetes(bilhetes_3)
+                        print('\nEvento eliminado com sucesso!')
+                        break
+                    else:
+                        print('Esse evento não existe!')
             elif(opcao == 4):
                 pass
             elif(opcao == 5):
