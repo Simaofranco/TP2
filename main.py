@@ -139,7 +139,7 @@ while True:
         ''')
             opcao = int(input('\nInsira uma opção:'))
             if(opcao == 1):
-                pass
+                fc.ver_eventos(evento_1, evento_2, evento_3)
             elif(opcao == 2):
                 pass
             elif(opcao == 3):
