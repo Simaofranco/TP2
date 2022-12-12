@@ -141,7 +141,18 @@ while True:
             if(opcao == 1):
                 fc.ver_eventos(evento_1, evento_2, evento_3)
             elif(opcao == 2):
-                pass
+                while True:
+                    evento = int(input('\nQual é o evento que pretende comprar os bilhetes(1/2/3):'))
+                    if evento == 1:
+                        fc.comprar_bilhetes(bancadas_1, bilhetes_1)
+                        break
+                    elif evento == 2:
+                        pass
+                    elif evento == 3:
+                        pass
+                    else: 
+                        print('Esse evento não existe!')
+
             elif(opcao == 3):
                 exit()
             elif(opcao == 4):

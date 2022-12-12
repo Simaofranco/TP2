@@ -23,7 +23,7 @@ def comprar_bilhetes(bancadas, list):
     """
     print('Preços:\n')
     for keys in bancadas.keys():
-        print('Bancada '+keys+': '+bancadas[keys]+'\n')
+        print('Bancada '+keys+': '+str(bancadas[keys])+'$\n')
     
     while True:
         bilhete = input('Qual o bilhete que quer comprar(A1-A5):')
