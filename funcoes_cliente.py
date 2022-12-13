@@ -26,7 +26,7 @@ def comprar_bilhetes(bancadas, list):
         print('Bancada '+keys+': '+str(bancadas[keys])+'$\n')
     
     while True:
-        bilhete = input('Qual o bilhete que quer comprar(A1-A5):')
+        bilhete = input('Qual o bilhete que quer comprar(ex:A1-A5):')
         if bilhete in list:
             break
         else:
