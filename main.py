@@ -16,6 +16,7 @@ bilhetes_3 = ['A1','A2','A3','A4','A5','B1','B2','B3','B4','B5','C1','C2','C3','
 
 while True:
     utilizador = input('É gerente(g) ou cliente(c):')
+    #gerente
     if utilizador == 'g':
         while True:
             print("""
@@ -118,10 +119,12 @@ while True:
             elif(opcao == 6):
                 exit()
             elif(opcao == 7):
+                #voltar para mudar de utilizador
                 break
             else:
                 print('\nInsira uma opção valida!')
 
+    #cliente
     elif utilizador == 'c':
         while True:
             print('''
@@ -158,6 +161,7 @@ while True:
             elif(opcao == 3):
                 exit()
             elif(opcao == 4):
+                #voltar para mudar de utilizador
                 break
             else:
                 print('\nInsira uma opção valida!')
